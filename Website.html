@@ -191,6 +191,18 @@
   #copyright {
   	position: fixed;
   }
+  .btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn.focus:active,
+.btn:active:focus,
+.btn:focus {
+  outline: 0 !important;
+  outline-offset: 0  !important;
+  background-image: none  !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none  !important;
+}
   </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
@@ -265,18 +277,96 @@
   <br>
   <div class="row slideanim">
     <div class="col-sm-4">
-      <img class="img-rounded img" src="foods/snacks.png" height="100px" width="100px">
-      <h4>Snacks</h4>
+    	<a href="#Snacks" data-toggle="collapse" data-parent="services" class="btn">
+      		<img class="img-rounded img" src="foods/snacks.png" height="100px" width="100px">
+      		<h4>Snacks</h4>
+      </a>
     </div>
     <div class="col-sm-4">
-      <img class="img-rounded" src="foods/fastfood.png" height="100px" width="100px">
-      <h4>Fast Food</h4>
+    	<a href="#Snacks" data-toggle="collapse" data-parent="services" class="btn">
+      		<img class="img-rounded" src="foods/fastfood.png" height="100px" width="100px">
+      		<h4>Fast Food</h4>
+      	</a>
     </div>
     <div class="col-sm-4">
-      <img class="img-rounded" src="foods/lunch.png" height="100px" width="100px">
-      <h4>Lunch</h4>
+    	<a href="#Snacks" data-toggle="collapse" data-parent="services" class="btn">
+      		<img class="img-rounded" src="foods/lunch.png" height="100px" width="100px">
+      		<h4>Lunch</h4>
+      	</a>
     </div>
   </div>
+  <div id="Snacks" class="col-sm-12 collapse">
+  	<table class="table table-striped table-bordered table-hover table-condensed">
+    	<thead>
+    		<tr>
+    			<th>Item Name</th>
+    			<th>Price</th>
+    		</tr>
+    	</thead>
+    	<tbody>
+    		<tr>
+    			<td>ABCD</td>
+    			<td>500</td>
+    		</tr>
+    		<tr>
+    			<td>ABCD</td>
+    			<td>500</td>
+    		</tr>
+    		<tr>
+    			<td>ABCD</td>
+    			<td>500</td>
+    		</tr>
+    	</tbody>
+    </table>
+   </div>
+   <div id="FastFood" class="col-sm-12 collapse">
+  	<table class="table table-striped table-bordered table-hover table-condensed">
+    	<thead>
+    		<tr>
+    			<th>Item Name</th>
+    			<th>Price</th>
+    		</tr>
+    	</thead>
+    	<tbody>
+    		<tr>
+    			<td>ABCD</td>
+    			<td>500</td>
+    		</tr>
+    		<tr>
+    			<td>ABCD</td>
+    			<td>500</td>
+    		</tr>
+    		<tr>
+    			<td>ABCD</td>
+    			<td>500</td>
+    		</tr>
+    	</tbody>
+    </table>
+   </div>
+   <div id="Lunch" class="col-sm-12 collapse">
+  	<table class="table table-striped table-bordered table-hover table-condensed">
+    	<thead>
+    		<tr>
+    			<th>Item Name</th>
+    			<th>Price</th>
+    		</tr>
+    	</thead>
+    	<tbody>
+    		<tr>
+    			<td>ABCD</td>
+    			<td>500</td>
+    		</tr>
+    		<tr>
+    			<td>ABCD</td>
+    			<td>500</td>
+    		</tr>
+    		<tr>
+    			<td>ABCD</td>
+    			<td>500</td>
+    		</tr>
+    	</tbody>
+    </table>
+   </div>	
   <br><br>
   <div class="row slideanim">
     <div class="col-sm-4">
