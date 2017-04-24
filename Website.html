@@ -191,18 +191,10 @@
   #copyright {
   	position: fixed;
   }
-  .btn.active.focus,
-.btn.active:focus,
-.btn.focus,
-.btn.focus:active,
-.btn:active:focus,
-.btn:focus {
-  outline: 0 !important;
-  outline-offset: 0  !important;
-  background-image: none  !important;
-  -webkit-box-shadow: none !important;
-  box-shadow: none  !important;
+#menu-links-upper , #menu-links-lower {
+	transition:all 0.4s ease;
 }
+
   </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
@@ -276,113 +268,37 @@
   <h4>What we offer</h4>
   <br>
   <div class="row slideanim">
-    <div class="col-sm-4">
-    	<a href="#Snacks" data-toggle="collapse" data-parent="services" class="btn">
-      		<img class="img-rounded img" src="foods/snacks.png" height="100px" width="100px">
-      		<h4>Snacks</h4>
-      </a>
+    <div class="col-sm-4 menu-links" id="snacks" data-menu-set="upper">
+      <img class="img-rounded img" src="foods/snacks.png" height="100px" width="100px">
+      <h4>Snacks</h4>
     </div>
-    <div class="col-sm-4">
-    	<a href="#Snacks" data-toggle="collapse" data-parent="services" class="btn">
-      		<img class="img-rounded" src="foods/fastfood.png" height="100px" width="100px">
-      		<h4>Fast Food</h4>
-      	</a>
+    <div class="col-sm-4 menu-links" id="fastfood" data-menu-set="upper">
+      <img class="img-rounded" src="foods/fastfood.png" height="100px" width="100px">
+      <h4>Fast Food</h4>
     </div>
-    <div class="col-sm-4">
-    	<a href="#Snacks" data-toggle="collapse" data-parent="services" class="btn">
-      		<img class="img-rounded" src="foods/lunch.png" height="100px" width="100px">
-      		<h4>Lunch</h4>
-      	</a>
+    <div class="col-sm-4 menu-links" id="lunch" data-menu-set="upper">
+      <img class="img-rounded" src="foods/lunch.png" height="100px" width="100px">
+      <h4>Lunch</h4>
     </div>
   </div>
-  <div id="Snacks" class="col-sm-12 collapse">
-  	<table class="table table-striped table-bordered table-hover table-condensed">
-    	<thead>
-    		<tr>
-    			<th>Item Name</th>
-    			<th>Price</th>
-    		</tr>
-    	</thead>
-    	<tbody>
-    		<tr>
-    			<td>ABCD</td>
-    			<td>500</td>
-    		</tr>
-    		<tr>
-    			<td>ABCD</td>
-    			<td>500</td>
-    		</tr>
-    		<tr>
-    			<td>ABCD</td>
-    			<td>500</td>
-    		</tr>
-    	</tbody>
-    </table>
-   </div>
-   <div id="FastFood" class="col-sm-12 collapse">
-  	<table class="table table-striped table-bordered table-hover table-condensed">
-    	<thead>
-    		<tr>
-    			<th>Item Name</th>
-    			<th>Price</th>
-    		</tr>
-    	</thead>
-    	<tbody>
-    		<tr>
-    			<td>ABCD</td>
-    			<td>500</td>
-    		</tr>
-    		<tr>
-    			<td>ABCD</td>
-    			<td>500</td>
-    		</tr>
-    		<tr>
-    			<td>ABCD</td>
-    			<td>500</td>
-    		</tr>
-    	</tbody>
-    </table>
-   </div>
-   <div id="Lunch" class="col-sm-12 collapse">
-  	<table class="table table-striped table-bordered table-hover table-condensed">
-    	<thead>
-    		<tr>
-    			<th>Item Name</th>
-    			<th>Price</th>
-    		</tr>
-    	</thead>
-    	<tbody>
-    		<tr>
-    			<td>ABCD</td>
-    			<td>500</td>
-    		</tr>
-    		<tr>
-    			<td>ABCD</td>
-    			<td>500</td>
-    		</tr>
-    		<tr>
-    			<td>ABCD</td>
-    			<td>500</td>
-    		</tr>
-    	</tbody>
-    </table>
-   </div>	
+  <div id="menu-links-upper" class="col-sm-12"></div>
   <br><br>
   <div class="row slideanim">
-    <div class="col-sm-4">
+    <div class="col-sm-4 menu-links" id="chinese" data-menu-set="lower">
       <img class="img-rounded" src="foods/chinese.png" height="100px" width="100px">
       <h4>Chinese</h4>
     </div>
-    <div class="col-sm-4">
+    <div class="col-sm-4 menu-links" id="southindian" data-menu-set="lower">
       <img class="img-rounded" src="foods/southindian.png" height="100px" width="100px">
       <h4>South Indian</h4>
     </div>
-    <div class="col-sm-4">
+    <div class="col-sm-4 menu-links" id="refreshments" data-menu-set="lower">
       <img class="img-rounded" src="foods/refreshments.png" height="100px" width="100px">
       <h4>Refreshments</h4>
     </div>
   </div>
 </div>
+<div id="menu-links-lower" class="col-sm-12"></div>
 
 <!-- Container (Portfolio Section) -->
 <div id="portfolio" class="container-fluid text-center bg-grey">
@@ -597,6 +513,50 @@ $(document).ready(function(){
         }
     });
   });
+
+
+//Ajax Call
+
+$(".menu-links").click(function() {
+  var xhttp = new XMLHttpRequest();
+  var id = $(this).attr('id');
+  var set = $(this).attr('data-menu-set');
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      getMenu(this,id,set);
+    }
+  };
+  xhttp.open("GET", "menu.xml", true);
+  xhttp.send();
+
+  function getMenu(xml,id,set) {
+  	var i;
+  	var menu = xml.responseXML;
+  	var table = '<table class="table table-striped table-bordered table-hover table-condensed"><thead><tr><th>Item Name</th><th>Price</th></tr></thead><tbody>';
+  	var x = menu.getElementsByTagName(id);
+  	//start loop
+  /*	for (i = 1; i <= x.length; i++) { 
+    table += "<tr><td>" +
+    x[0].getElementsByTagName('item')[1].childNodes[1].nodeValue +
+    "</td><td>" +
+    x[0].getElementsByTagName('item')[1].getElementsByTagName('price').nodeValue +
+    "</td></tr>";
+  }//end for loop
+	table += '</tbody>';*/
+
+/*
+	if(set == 'upper') {
+		$('#menu-links-upper').html(table);
+	} else if(set == 'lower') {
+		$('#menu-links-lower').html(table);
+	}*/
+
+	$('#menu-links-upper').html(x[0].getElementsByTagName('name')[0] );
+
+}
+
+});
+
 })
 </script>
 
