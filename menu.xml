@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+<snacks>
+    <item>
+        <name>Samosa Pav</name>
+        <price>12</price>
+    </item>
+    <item>
+        <name>Wada Pav</name>
+        <price>12</price>
+    </item>
+    <item>
+        <name>Batata Wada</name>
+        <price>18</price>
+    </item>
+    <item>
+        <name>Samosa Usal</name>
+        <price>28</price>
+    </item>
+    <item>
+        <name>Vada Usal</name>
+        <price>24</price>
+    </item>
+    <item>
+        <name>Vada Samosa Usal</name>
+        <price>28</price>
+    </item>
+    <item>
+        <name>Dahi Samosa</name>
+        <price>28</price>
+    </item>
+    <item>
+        <name>Usal Pav</name>
+        <price>20</price>
+    </item>
+    <item>
+        <name>Misal Pav</name>
+        <price>32</price>
+    </item>
+    <item>
+        <name>Bread Pakoda</name>
+        <price>38</price>
+    </item>
+    <item>
+        <name>Idli Sambhar</name>
+        <price>25</price>
+    </item>
+    <item>
+        <name>Mendu Wada Sambhar</name>
+        <price>28</price>
+    </item>
+    <item>
+        <name>Idli Wada</name>
+        <price>26</price>
+    </item>
+    <item>
+        <name>Dahi Idli</name>
+        <price>28</price>
+    </item>
+    <item>
+        <name>Butter Idli</name>
+        <price>28</price>
+    </item>
+    <item>
+        <name>Idli Fry</name>
+        <price>28</price>
+    </item>
+    <item>
+        <name>Dahi Misal Pav</name>
+        <price>40</price>
+    </item>
+    <item>
+        <name>Upma/Poha</name>
+        <price>20</price>
+    </item>
+    <item>
+        <name>Dahi Kachori</name>
+        <price>30</price>
+    </item>
+</snacks>
+<lunch>
+    <item>
+        <name>Chapati Bhaji</name>
+        <price>38</price>
+    </item>
+    <item>
+        <name>Chapati Paneer Bhaji</name>
+        <price>43</price>
+    </item>
+    <item>
+        <name>Puri Bhaji</name>
+        <price>40</price>
+    </item>
+    <item>
+        <name>Puri Paneer Bhaji</name>
+        <price>43</price>
+    </item>
+    <item>
+        <name>Potato Bhaji</name>
+        <price>28</price>
+    </item>
+    <item>
+        <name>Panner Bhaji</name>
+        <price>45</price>
+    </item>
+    <item>
+        <name>Sada Bhaji</name>
+        <price>35</price>
+    </item>
+    <item>
+        <name>Raita</name>
+        <price>18</price>
+    </item>
+    <item>
+        <name>Dahi(Curd)</name>
+        <price>14</price>
+    </item>
+    <item>
+        <name>Puri Plate</name>
+        <price>18</price>
+    </item>
+    <item>
+        <name>Chapati(Single)</name>
+        <price>05</price>
+    </item>
+    <item>
+        <name>Dal Fry</name>
+        <price>23</price>
+    </item>
+    <item>
+        <name>Lunch</name>
+        <price>48</price>
+    </item>
+    <item>
+        <name>Lunch With Pulav</name>
+        <price>53</price>
+    </item>
+    <item>
+        <name>Lunh With Jira-Rice</name>
+        <price>53</price>
+    </item>
+    <item>
+        <name>Dal Rice</name>
+        <price>28</price>
+    </item>
+    <item>
+        <name>Dal Fry Rice</name>
+        <price>40</price>
+    </item>
+    <item>
+        <name>Dal Rice with Bhaji</name>
+        <price>38</price>
+    </item>
+    <item>
+        <name>Plain Dahi Rice</name>
+        <price>38</price>
+    </item>
+</lunch>
+<chinese>
+    <item>
+        <name>Haka Noodles</name>
+        <price>48</price>
+    </item>
+    <item>
+        <name>Shezwan Noodles</name>
+        <price>54</price>
+    </item>
+    <item>
+        <name>Singapore Noodles</name>
+        <price>54</price>
+    </item>
+    <item>
+        <name>Manchow Noodles</name>
+        <price>54</price>
+    </item>
+    <item>
+        <name>Manchurian Noodles</name>
+        <price>57</price>
+    </item>
+    <item>
+        <name>Triple Noodles</name>
+        <price>57</price>
+    </item>
+    <item>
+        <name>Chinese Bhel</name>
+        <price>43</price>
+    </item>
+    <item>
+        <name>Chinese Cheese Bhel</name>
+        <price>63</price>
+    </item>
+    <item>
+        <name>Fried Rice</name>
+        <price>48</price>
+    </item>
+    <item>
+        <name>Shezwan Rice</name>
+        <price>54</price>
+    </item>
+    <item>
+        <name>Singapore Rice</name>
+        <price>54</price>
+    </item>
+    <item>
+        <name>Manchow Rice</name>
+        <price>58</price>
+    </item>
+    <item>
+        <name>Manchurian Rice</name>
+        <price>57</price>
+    </item>
+    <item>
+        <name>Triple Shezwan Rice</name>
+        <price>57</price>
+    </item>
+    <item>
+        <name>Tomato Rice(With Dahi)</name>
+        <price>48</price>
+    </item>
+</chinese>
+<refreshments>
+    <item>
+        <name>Cocktail</name>
+        <price>30</price>
+    </item>
+    <item>
+        <name>Water Melon</name>
+        <price>30</price>
+    </item>
+    <item>
+        <name>Pineapple</name>
+        <price>30</price>
+    </item>
+    <item>
+        <name>Grapes</name>
+        <price>30</price>
+    </item>
+    <item>
+        <name>Pineapple + Water Melone</name>
+        <price>30</price>
+    </item>
+    <item>
+        <name>Papaya</name>
+        <price>30</price>
+    </item>
+    <item>
+        <name>Ice Tea</name>
+        <price>30</price>
+    </item>
+    <item>
+        <name>Mosambi</name>
+        <price>30</price>
+    </item>
+    <item>
+        <name>Orange</name>
+        <price>30</price>
+    </item>
+    <item>
+        <name>Maramari</name>
+        <price>30</price>
+    </item>
+    <item>
+        <name>Ganga Jmuna</name>
+        <price>30</price>
+    </item>
+    <item>
+        <name>Masmelone</name>
+        <price>30</price>
+    </item>
+    <item>
+        <name>Anar</name>
+        <price>30</price>
+    </item>
+</refreshments>
+</menu>
